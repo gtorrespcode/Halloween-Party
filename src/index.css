@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Creepster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .creep {
+    @apply font-primary
+  }
+
+  .bubble {
+    @apply font-secundary
+  }
+}
