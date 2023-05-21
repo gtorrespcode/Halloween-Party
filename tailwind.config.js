@@ -7,7 +7,16 @@ export default {
       primary: "Creepster",
       secundary: "Bubblegum Sans"
     },
-    extend: {},
+    extend: {
+      colors:{
+        primary: "#FFAC00",
+        info: "#08A3F7",
+        background: "#050C14",
+      },
+      backgroundImage: {
+        home: "url(./public/Images/Home.png)",
+      },
+    },
   },
   plugins: [],
 }

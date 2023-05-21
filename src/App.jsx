@@ -1,15 +1,12 @@
-import { useState } from 'react'
-
-
+import { useState } from "react";
+import Home from "./components/Home";
 
 function App() {
-  
-
   return (
-    <div >
-      Halloween Party
-    </div>
-  )
+    <>
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
