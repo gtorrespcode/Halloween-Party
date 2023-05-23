@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="bg-background h-[1000px]">
     <Nav />
+    <Home />
     </div>
   );
 }
