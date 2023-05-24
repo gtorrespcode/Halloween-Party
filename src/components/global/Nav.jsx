@@ -1,10 +1,11 @@
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { Link } from "react-scroll";
 
 export default function Nav() {
   const [navOpen, setNavOpen] = useState(false);
   const anchor =
-    "md:flex md:flex-row md:font-primary md:text-xl md:text-primary md:border-solid md:border-2 md:border-primary md:rounded-lg md:px-6 md:py-1 md:hover:bg-background md:delay-100 md:duration-200";
+    "md:flex md:flex-row md:font-primary md:text-xl md:text-primary md:border-solid md:border-2 md:border-primary md:rounded-lg md:px-6 md:py-1 md:hover:bg-background md:delay-100 md:duration-200 md:cursor-pointer";
   const changeNav = () => {
     setNavOpen(!navOpen);
   };
@@ -65,9 +66,17 @@ export default function Nav() {
             : "hidden md:flex md:flex-row md:gap-x-8"
         }
       >
-        <a className={anchor} href="*">
-          O Chamado
-        </a>
+        <Link className={anchor} activeClass="active"
+      to="call"
+      spy={true}
+      smooth={true}
+      hashSpy={true}
+      offset={-40}
+      duration={700}
+      delay={200}>
+      O Chamado
+        </Link>
+        
         <a className={anchor} href="*">
           Atividade Paranormal
         </a>
@@ -80,6 +89,7 @@ export default function Nav() {
         <a className={anchor} href="*">
           Halloween
         </a>
+        
       </div>
     </nav>
   );

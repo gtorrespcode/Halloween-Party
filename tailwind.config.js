@@ -31,6 +31,11 @@ export default {
         candy: "url(/Images/candy.png)",
         drinks: "url(/Images/drink.png)",
       },
+
+      fontSize : {
+        mobileP : ["1.125rem", "1.75rem"],
+        desktop : ["2rem", "2.325rem"]
+      }
     },
   },
   plugins: [],
