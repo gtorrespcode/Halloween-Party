@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       <section className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center">
-        <div className=" w-[350px] h-[270] bg-black/[.5] rounded-[20px] backdrop-blur-[2px] flex flex-col items-center justify-center py-8">
+        <div className=" w-[90%] max-w-[350px] h-[270] bg-black/[.5] rounded-[20px] backdrop-blur-[2px] flex flex-col items-center justify-center py-8">
           <h1 className="text-primary font-primary text-3xl text-center">
             Halloween
           </h1>
