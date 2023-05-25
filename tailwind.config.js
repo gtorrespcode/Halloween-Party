@@ -32,10 +32,10 @@ export default {
         drinks: "url(/Images/drink.png)",
       },
 
-      fontSize : {
-        mobileP : ["1.125rem", "1.75rem"],
-        desktop : ["2rem", "2.325rem"]
-      }
+      fontSize: {
+        mobileP: ["1.125rem", "1.75rem"],
+        desktop: ["1.75rem", "2.325rem"],
+      },
     },
   },
   plugins: [],

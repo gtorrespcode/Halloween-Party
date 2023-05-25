@@ -1,21 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import { useState } from "react";
 import Home from "./components/Home";
 import Nav from "./components/global/Nav";
 import Call from "./components/Call";
-
+import { NavProvider } from "./contexts/NavContext";
 
 function App() {
   return (
     <div className="bg-background">
-    <Nav />
-    <Home />
-    <Call />
-
-      
-    
-
-    
+      <NavProvider>
+        <Nav />
+        <Home />
+        <Call />
+      </NavProvider>
     </div>
   );
 }
