@@ -2,7 +2,6 @@
 
 import { useContext } from "react";
 import { NavContext } from "../contexts/NavContext";
-import dataCall from "../data/dataCall";
 
 export default function Call() {
   const { changeNav } = useContext(NavContext);
@@ -13,10 +12,9 @@ export default function Call() {
         md:text-desktop md:h-screen md:pb-0"
     >
       <p className="md:w-[64%]">
-        {dataCall.part1} <span className="text-info">{dataCall.span1}</span>
-        {dataCall.part2} <span className="text-info">{dataCall.span2}</span>
-        {dataCall.part3}
+      Venham todos, mortais corajosos, <span className="text-info">O Chamado</span> para a noite mais aterrorizante do ano! Em meio à escuridão sombria, nas profundezas, nasce um convite irrecusável para a nossa festa. Adentrem e se preparem para experimentar o medo em sua forma mais pura. Nesta celebração misteriosa, as almas assombradas se reúnem para comemorar o <span className="text-info">Halloween</span> com uma intensidade que ecoará pelos séculos. No cenário sinistro e enfeitiçado, onde as sombras dançam e as criaturas sombrias sussurram, vocês testemunharão o terror em sua magnitude suprema.
       </p>
+
       <img
         src="/Images/ghost.png"
         className="w-[16.125rem] h-[16.25rem]

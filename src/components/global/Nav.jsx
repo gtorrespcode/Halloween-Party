@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 // eslint-disable-next-line no-unused-vars
 import { Link } from "react-scroll";
 import { NavContext } from "../../contexts/NavContext";

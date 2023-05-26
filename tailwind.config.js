@@ -27,7 +27,7 @@ export default {
       },
       backgroundImage: {
         home: "url(/Images/Home.png)",
-        savory: "url(/Images/hotdog.png)",
+        savory: "url(/Images/hotdog.jpg)",
         candy: "url(/Images/candy.png)",
         drinks: "url(/Images/drink.png)",
       },
