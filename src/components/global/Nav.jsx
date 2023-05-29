@@ -46,14 +46,34 @@ export default function Nav() {
           O Chamado
         </Link>
 
-        <a className={anchor} href="*">
+        <Link
+          className={anchor}
+          onClick={changeNav}
+          activeClass="active"
+          to="gallery"
+          smooth={true}
+          offset={-40}
+          duration={700}
+          delay={200}
+        >
           Atividade Paranormal
-        </a>
+        </Link>
+        
+        <Link
+          className={anchor}
+          onClick={changeNav}
+          activeClass="active"
+          to="menu"
+          smooth={true}
+          offset={-40}
+          duration={700}
+          delay={200}
+        >
+          O Poço
+        </Link>
+        
         <a className={anchor} href="*">
           Jogos Mortais
-        </a>
-        <a className={anchor} href="*">
-          O Poço
         </a>
         <a className={anchor} href="*">
           Halloween
