@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <img
           className="hidden md:block md:w-[25%] md:max-w-[380px] md:h-[25%] md:origin-center md:rotate-[17deg] md:-scale-x-[1]"
-          src="public\Images\Pumpkin_logo.png"
+          src="/Images/Pumpkin_logo.png"
           alt="pumpking-logo"
         />
       </section>
