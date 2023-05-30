@@ -4,7 +4,7 @@ export default function Home() {
       <section className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center">
         <img
           className="hidden md:block md:w-[25%] md:max-w-[380px] md:h-[25%] md:origin-center md:rotate-[-17deg]"
-          src="publi/Images/Pumpkin_logo.png"
+          src="/Images/Pumpkin_logo.png"
           alt="pumpking-logo"
         />
         <div className=" w-[90%] max-w-[350px] min-w-[300px] h-[270px] bg-black/[.5] rounded-[20px] backdrop-blur-[2px] flex flex-col items-center justify-center py-8 md:w-[30%] md:max-w-[390px] md:h-[230px] md:py-6 md:gap-y-4 ">

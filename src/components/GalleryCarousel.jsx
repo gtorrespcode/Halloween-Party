@@ -2,10 +2,10 @@
 
 import { Carousel } from "react-responsive-carousel"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
+import carousel from "../data/carousel";
 
 export default function MyCarousel() {
 
-    // eslint-disable-next-line no-unused-vars
     const renderArrowPrev = (clickHandler, hasPrev, label) => (
         <button
           onClick={clickHandler}
@@ -41,13 +41,12 @@ export default function MyCarousel() {
                     // autoPlay={true}
                     // infiniteLoop={true}
                     transitionTime={600}
-                    className="w-[16.25rem] h-[16.25rem] md:hidden"
+                    className="w-[16.25rem] h-[16.25rem] border-2 border-primary  md:hidden"
                     >
                     
-            
-                <img src="/Images/card_1.jpg"/>
-                <img src="/Images/card_0.jpg"/>
-                <img src="/Images/card_2.jpg"/>
+                {carousel.map((element, index) => {
+                    return <div key={index} className="h-[16rem] "><img src={element} className=" h-full object-cover  "/></div>})}
+                
                 
             
         </Carousel>

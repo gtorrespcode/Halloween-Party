@@ -8,7 +8,7 @@ export default function Call() {
   return (
     <section
       id="call"
-      className="text-mobileP w-full font-secundary text-primary text-center flex flex-col justify-center items-center px-8 py-4 gap-y-12
+      className="text-mobileP w-full font-secundary text-primary text-center flex flex-col justify-center items-center px-8 pb-6 gap-y-12
         md:text-desktop md:h-screen md:pb-0"
     >
       <p className="md:w-[64%]">

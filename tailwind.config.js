@@ -35,14 +35,14 @@ export default {
         gImage2 : "url(/Images/gImage_2.jpeg)",
         gImage3 : "url(/Images/gImage_3.jpg)",
         gImage4 : "url(/Images/gImage_4.jpg)",
-        gImage5 : "url(/Images/gImage_5.jpg)",
-        gImage6 : "url(/Images/gImage_6.jpeg)"
+        gImage5 : "url(/Images/gImage_5.jpg)"
+        
         
       },
 
       fontSize: {
         mobileP: ["1.125rem", "1.75rem"],
-        desktop: ["1.75rem", "2.325rem"],
+        desktop: ["1.5rem", "2rem"],
       },
     },
   },
