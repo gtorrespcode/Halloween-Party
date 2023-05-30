@@ -10,7 +10,7 @@ export default function Gallery (){
             <div className="md:flex md:flex-row md:justify-center md:items-center">
                 <img src="/Images/ghost_2.png"
                 className="w-[16.25rem] h-[16.25rem]
-                            md:w-[35.3125rem] md:h-[35.3125rem]" />
+                            md:hidden" />
             
              <GalleryGrid />
             <MyCarousel/>

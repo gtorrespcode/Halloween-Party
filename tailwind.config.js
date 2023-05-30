@@ -30,6 +30,14 @@ export default {
         savory: "url(/Images/hotdog.jpg)",
         candy: "url(/Images/candy.jpg)",
         drinks: "url(/Images/drink.jpg)",
+        gImage0 : "url(/Images/gImage_0.jpg)",
+        gImage1 : "url(/Images/gImage_1.jpg)",
+        gImage2 : "url(/Images/gImage_2.jpeg)",
+        gImage3 : "url(/Images/gImage_3.jpg)",
+        gImage4 : "url(/Images/gImage_4.jpg)",
+        gImage5 : "url(/Images/gImage_5.jpg)",
+        gImage6 : "url(/Images/gImage_6.jpeg)"
+        
       },
 
       fontSize: {
