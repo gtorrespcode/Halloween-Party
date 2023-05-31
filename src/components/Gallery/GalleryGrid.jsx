@@ -1,4 +1,4 @@
-import gallery from "../data/gallery"
+import gallery from "../../data/gallery"
 
 export default function GalleryGrid() {
 

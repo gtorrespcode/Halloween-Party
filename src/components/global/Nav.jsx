@@ -72,9 +72,18 @@ export default function Nav() {
           O Poço
         </Link>
         
-        <a className={anchor} href="*">
+        <Link
+          className={anchor}
+          onClick={changeNav}
+          activeClass="active"
+          to="games"
+          smooth={true}
+          offset={-40}
+          duration={700}
+          delay={200}
+        >
           Jogos Mortais
-        </a>
+        </Link>
         <a className={anchor} href="*">
           Halloween
         </a>

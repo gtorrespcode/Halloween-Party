@@ -37,10 +37,10 @@ export default {
         gImage3 : "url(/Images/gImage_3.jpg)",
         gImage4 : "url(/Images/gImage_4.jpg)",
         gImage5 : "url(/Images/gImage_5.jpg)",
-        game0 : "url(/Images/card_0.jpg)",
-        game1:"url(/Images/card_1.jpg)",
-        game2:"url(/Images/card_2.jpg)",
-        game3:"url(/Images/card_3.jpg)"
+        game0 : "url(/Images/KingsCup.jpg)",
+        game1:"url(/Images/Quarters.jpg)",
+        game2:"url(/Images/Mime.jpg)",
+        game3:"url(/Images/BeerPong.jpg)"
       },
 
       fontSize: {

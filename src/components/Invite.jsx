@@ -1,8 +1,8 @@
 export default function Invite (){
 
     return (
-        <div>
-            Inivite
-        </div>
+        <section>
+            test
+        </section>
     )
 }

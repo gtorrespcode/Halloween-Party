@@ -2,11 +2,11 @@
 import Home from "./components/Home";
 import Nav from "./components/global/Nav";
 import Call from "./components/Call";
-import Gallery from "./components/Gallery";
-import Menu from "./components/Menu";
+import Gallery from "./components/Gallery/Gallery";
+import Menu from "./components/Menu/Menu";
 import Games from "./components/Games";
 import Invite from "./components/Invite";
-import Developers from "./components/Developers";
+import Developers from "./components/Developers/Developers";
 import { NavProvider } from "./contexts/NavContext";
 
 function App() {

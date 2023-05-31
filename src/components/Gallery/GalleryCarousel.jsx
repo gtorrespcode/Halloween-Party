@@ -2,7 +2,7 @@
 
 import { Carousel } from "react-responsive-carousel"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
-import carousel from "../data/carousel";
+import carousel from "../../data/carousel";
 
 export default function MyCarousel() {
 
