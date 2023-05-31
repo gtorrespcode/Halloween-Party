@@ -84,9 +84,19 @@ export default function Nav() {
         >
           Jogos Mortais
         </Link>
-        <a className={anchor} href="*">
+        
+        <Link
+          className={anchor}
+          onClick={changeNav}
+          activeClass="active"
+          to="invite"
+          smooth={true}
+          offset={-40}
+          duration={700}
+          delay={200}
+        >
           Halloween
-        </a>
+        </Link>
       </div>
     </nav>
   );

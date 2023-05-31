@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Line from "./global/Line";
 import {gamesImg, gameNames} from "../data/games";
 
 export default function Games() {
@@ -12,7 +13,7 @@ export default function Games() {
 
 
   return (
-    <section id="games" className="text-primary  text-mobileP text-center font-secundary flex flex-col items-center  justify-center px-8 gap-y-12 md:text-desktop">
+    <section id="games" className="text-primary  text-mobileP text-center font-secundary flex flex-col items-center justify-center py-12 px-8 gap-y-12 md:text-desktop">
       <p>Para animar ainda mais a noite que tal alguns <span className="text-info">Jogos Mortais</span> ?</p>
       <div className="flex flex-col items-center justify-center gap-x-8 sm:flex-row sm: gap-y-6">
         <div
@@ -39,6 +40,7 @@ export default function Games() {
         
       </div>
       <p>Só cuidado com a bebida pra ninguém ter <span className="text-info">Psicose</span>.</p>
+      <Line />
     </section>
   );
 }

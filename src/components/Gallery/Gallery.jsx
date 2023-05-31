@@ -1,5 +1,6 @@
 import MyCarousel from "./GalleryCarousel"
 import GalleryGrid from "./GalleryGrid"
+import Line from "../global/Line"
 
 export default function Gallery (){
 
@@ -16,7 +17,7 @@ export default function Gallery (){
             <MyCarousel/>
             </div>
             <p>Agora é sua vez de ser <span className="text-info">O Iluminado</span>.</p>
-            
+            <Line />
         </section>
     )
 }

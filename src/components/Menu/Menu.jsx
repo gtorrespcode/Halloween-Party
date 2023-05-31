@@ -1,4 +1,5 @@
 import MenuItem from "./MenuItem"
+import Line from "../global/Line"
 import {savory, candy, drink} from "../../data/menuItems"
 
 export default function Menu (){
@@ -16,7 +17,7 @@ export default function Menu (){
             </div>
             <MenuItem bg="bg-drinks" type="Bebidas e Drinks" items={drink}/>
             </div>
-
+            <Line />
 
             
 

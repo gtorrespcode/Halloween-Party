@@ -2,6 +2,7 @@
 
 import { useContext } from "react";
 import { NavContext } from "../contexts/NavContext";
+import Line from "./global/Line";
 
 export default function Call() {
   const { changeNav } = useContext(NavContext);
@@ -32,6 +33,7 @@ export default function Call() {
         </span>{" "}
         ou seguir deslizando para baixo.
       </p>
+      <Line />
     </section>
   );
 }
