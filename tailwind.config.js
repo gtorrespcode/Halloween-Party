@@ -13,10 +13,10 @@ export default {
       md: "903px",
       // => @media (min-width: 768px)
 
-      lg: "1024px",
+      lg: "1150px",
       // => @media (min-width: 1024px)
 
-      xl: "1280px",
+      xl: "1440px",
       // => @media (min-width: 1280px)
     },
     extend: {
@@ -24,6 +24,7 @@ export default {
         primary: "#FFAC00",
         info: "#08A3F7",
         background: "#050C14",
+        game: "#F70C08"
       },
       backgroundImage: {
         home: "url(/Images/Home.png)",
@@ -35,9 +36,11 @@ export default {
         gImage2 : "url(/Images/gImage_2.jpeg)",
         gImage3 : "url(/Images/gImage_3.jpg)",
         gImage4 : "url(/Images/gImage_4.jpg)",
-        gImage5 : "url(/Images/gImage_5.jpg)"
-        
-        
+        gImage5 : "url(/Images/gImage_5.jpg)",
+        game0 : "url(/Images/card_0.jpg)",
+        game1:"url(/Images/card_1.jpg)",
+        game2:"url(/Images/card_2.jpg)",
+        game3:"url(/Images/card_3.jpg)"
       },
 
       fontSize: {
