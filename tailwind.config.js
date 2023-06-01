@@ -44,7 +44,7 @@ export default {
       },
 
       fontSize: {
-        mobileP: ["1.125rem", "1.75rem"],
+        mobileP: ["1rem", "1.5rem"],
         desktop: ["1.5rem", "2rem"],
       },
     },

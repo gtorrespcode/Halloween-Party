@@ -13,7 +13,7 @@ export default function Games() {
 
 
   return (
-    <section id="games" className="text-primary  text-mobileP text-center font-secundary flex flex-col items-center justify-center py-12 px-8 gap-y-12 md:text-desktop">
+    <section id="games" className="text-primary  text-mobileP text-center font-secundary flex flex-col items-center justify-center mb-12 px-8 gap-y-12 md:gap-y-24 md:text-desktop">
       <p>Para animar ainda mais a noite que tal alguns <span className="text-info">Jogos Mortais</span> ?</p>
       <div className="flex flex-col items-center justify-center gap-x-8 sm:flex-row sm: gap-y-6">
         <div

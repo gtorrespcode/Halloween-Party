@@ -39,7 +39,7 @@ export default function Nav() {
           activeClass="active"
           to="call"
           smooth={true}
-          offset={-40}
+          offset={-90}
           duration={700}
           delay={200}
         >
@@ -52,7 +52,7 @@ export default function Nav() {
           activeClass="active"
           to="gallery"
           smooth={true}
-          offset={-40}
+          offset={-90}
           duration={700}
           delay={200}
         >
@@ -65,7 +65,7 @@ export default function Nav() {
           activeClass="active"
           to="menu"
           smooth={true}
-          offset={-40}
+          offset={-90}
           duration={700}
           delay={200}
         >
@@ -78,7 +78,7 @@ export default function Nav() {
           activeClass="active"
           to="games"
           smooth={true}
-          offset={-40}
+          offset={-90}
           duration={700}
           delay={200}
         >
@@ -91,7 +91,7 @@ export default function Nav() {
           activeClass="active"
           to="invite"
           smooth={true}
-          offset={-40}
+          offset={-90}
           duration={700}
           delay={200}
         >

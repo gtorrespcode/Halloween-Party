@@ -12,7 +12,7 @@ import { NavProvider } from "./contexts/NavContext";
 
 function App() {
   return (
-    <div className="bg-background">
+    <div className="bg-background" >
       <NavProvider>
         <Nav />
         <Home />
