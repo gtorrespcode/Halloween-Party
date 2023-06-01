@@ -30,7 +30,7 @@ export default function MyCarousel() {
     
 
     return (
-        <div className="relative">
+        <div className="relative md:hidden">
         <Carousel  
                     renderArrowNext={renderArrowNext}
                     renderArrowPrev={renderArrowPrev}

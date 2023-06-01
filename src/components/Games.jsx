@@ -13,13 +13,13 @@ export default function Games() {
 
 
   return (
-    <section id="games" className="text-primary  text-mobileP text-center font-secundary flex flex-col items-center justify-center mb-12 px-8 gap-y-12 md:gap-y-24 md:text-desktop">
+    <section id="games" className="text-primary  text-mobileP text-center font-secundary flex flex-col items-center justify-center mb-12 px-8 gap-y-12 md:gap-y-14 md:text-desktop">
       <p>Para animar ainda mais a noite que tal alguns <span className="text-info">Jogos Mortais</span> ?</p>
       <div className="flex flex-col items-center justify-center gap-x-8 sm:flex-row sm: gap-y-6">
         <div
           className={
             gamesImg[activeIndex] +
-            " bg-no-repeat bg-cover bg-center w-[250px] h-[350px] rounded-[0.5rem] drop-shadow-[8px_8px_1px_rgba(0,0,0,0.25)]  transition-all duration-300   md:w-[350px] md:h-[450px]"
+            " bg-no-repeat bg-cover bg-center w-[250px] h-[350px] rounded-[0.5rem] drop-shadow-[8px_8px_3px_rgba(0,0,0,0.25)]  transition-all duration-700 hover:animate-shake cursor-pointer  md:w-[350px] md:h-[450px]"
           }
         ></div>
         <div className="w-[290px] font-secundary text-[1.45rem] md:text-[2rem] text-center text-game/25 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 sm:flex-col ">

@@ -8,6 +8,7 @@ import Games from "./components/Games";
 import Invite from "./components/Invite";
 import Developers from "./components/Developers/Developers";
 import Footer from "./components/global/Footer";
+
 import { NavProvider } from "./contexts/NavContext";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Invite />
         <Developers />
         <Footer />
+        
       </NavProvider>
     </div>
   );

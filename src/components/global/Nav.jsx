@@ -1,6 +1,8 @@
 import { useContext } from "react";
+import { FiArrowUpCircle} from "react-icons/fi"
 // eslint-disable-next-line no-unused-vars
 import { Link } from "react-scroll";
+
 import { NavContext } from "../../contexts/NavContext";
 
 export default function Nav() {
@@ -9,6 +11,7 @@ export default function Nav() {
     "md:flex md:flex-row md:font-primary md:text-xl md:text-primary md:border-solid md:border-2 md:border-primary md:rounded-lg md:px-6 md:py-1 md:hover:bg-background md:delay-100 md:duration-200 md:cursor-pointer";
 
   return (
+    <div>
     <nav
       className={
         navOpen
@@ -97,7 +100,36 @@ export default function Nav() {
         >
           Halloween
         </Link>
+
+        <Link
+          className={anchor}
+          onClick={changeNav}
+          activeClass="active"
+          to="developers"
+          smooth={true}
+          offset={-90}
+          duration={700}
+          delay={200}
+        >
+          Nós
+        </Link>
       </div>
     </nav>
+    <div className="fixed bottom-6 left-[88%] cursor-pointer z-10 text-primary text-[2rem] md:left-[95%] md:text-[2.2rem]" >
+    <Link
+      
+          
+          activeClass="active"
+          to="home"
+          smooth={true}
+          offset={-90}
+          duration={700}
+          delay={200}
+        >
+          <FiArrowUpCircle/>
+        </Link>
+        
+        </div>
+    </div>
   );
 }

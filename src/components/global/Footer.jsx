@@ -1,7 +1,7 @@
 export default function Footer (){
 
     return (
-        <footer className="w-full h-[6.25rem] text-[0.625rem] bg-primary relative bottom-12 flex justify-between items-center px-4 py-2 md:py-6 md:justify-around md:text-base
+        <footer className="w-full h-[6.25rem] text-[0.625rem] bg-primary relative bottom-20 flex justify-between items-center px-4 py-2 md:py-6 md:justify-around md:text-base
                                 md:h-[10.25rem]">
         <img src="/Images/Pumpkin_logo.png" className="w-[4.375rem] h-[4.375rem] md:w-[8rem] md:h-[8rem]"/>
         <div className="text-center">

@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <section className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center">
+      <section id="home" className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center px-8">
         <img
           className="hidden md:block md:w-[25%] md:max-w-[380px] md:h-[25%] md:origin-center md:rotate-[-17deg]"
           src="/Images/Pumpkin_logo.png"

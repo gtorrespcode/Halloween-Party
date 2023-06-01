@@ -47,6 +47,18 @@ export default {
         mobileP: ["1rem", "1.5rem"],
         desktop: ["1.5rem", "2rem"],
       },
+
+      keyframes: {
+        shake: {
+          "0% , 100%" : {transform: "rotate(0deg)" },
+          "25%, 75%" : {transform: "rotate(-3deg)"},
+          "50%" : {transform: "rotate(3deg)"}  
+        }
+      },
+
+      animation: {
+        shake: "shake 0.8s ease-in-out infinite"
+      }
     },
   },
   plugins: [],
