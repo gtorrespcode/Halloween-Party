@@ -42,13 +42,12 @@ main::-webkit-scrollbar-track {
 }
 
 
+
 main::-webkit-scrollbar-thumb {
   background-color: #08A3F7;
   border-radius: 8px;
   width: 1px;
   height: 5px;
 }
-
-
 
 

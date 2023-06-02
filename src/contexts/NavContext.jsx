@@ -32,6 +32,7 @@ export const NavProvider = ({ children }) => {
     };
   }, []);
 
+  
 
   const changeNav = () => {
     if (window.innerWidth < 903) {
