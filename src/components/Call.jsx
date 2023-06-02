@@ -6,7 +6,7 @@ import { NavContext } from "../contexts/NavContext";
 import Line from "./global/Line";
 
 export default function Call() {
-  const { changeNav } = useContext(NavContext);
+  const { changeNav, openModal } = useContext(NavContext);
   return (
     <section
     
@@ -15,7 +15,7 @@ export default function Call() {
         md:text-desktop md:h-screen md:pb-0"
     >
       <p className="md:w-[64%]">
-      Venham todos, mortais corajosos, <span className="text-info">O Chamado</span> para a noite mais aterrorizante do ano! Em meio à escuridão sombria, nas profundezas, nasce um convite irrecusável para a nossa festa. Adentrem e se preparem para experimentar o medo em sua forma mais pura. Nesta celebração misteriosa, as almas assombradas se reúnem para comemorar o <span className="text-info">Halloween</span> com uma intensidade que ecoará pelos séculos. No cenário sinistro e enfeitiçado, onde as sombras dançam e as criaturas sombrias sussurram, vocês testemunharão o terror em sua magnitude suprema.
+      Venham todos, mortais corajosos, <span className="text-info" onClick={openModal}>O Chamado</span> para a noite mais aterrorizante do ano! Em meio à escuridão sombria, nas profundezas, nasce um convite irrecusável para a nossa festa. Adentrem e se preparem para experimentar o medo em sua forma mais pura. Nesta celebração misteriosa, as almas assombradas se reúnem para comemorar o <span className="text-info">Halloween</span> com uma intensidade que ecoará pelos séculos. No cenário sinistro e enfeitiçado, onde as sombras dançam e as criaturas sombrias sussurram, vocês testemunharão o terror em sua magnitude suprema.
       </p>
 
       <img

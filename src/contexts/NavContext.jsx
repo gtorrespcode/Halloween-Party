@@ -6,7 +6,13 @@ export const NavContext = createContext();
 export const NavProvider = ({ children }) => {
   const [navOpen, setNavOpen] = useState(false);
   const [backNav, setBackNav] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
+  const openModal = ({target}) => {
+      setModalOpen(!modalOpen);
+      console.log(target.innerText);
+  }
+    
 
   useEffect(() => {
     function handleScroll() {
@@ -36,7 +42,7 @@ export const NavProvider = ({ children }) => {
   
 
   return (
-    <NavContext.Provider value={{ navOpen, changeNav, backNav }}>
+    <NavContext.Provider value={{ navOpen, changeNav, backNav, openModal }}>
       {children}
     </NavContext.Provider>
   );
