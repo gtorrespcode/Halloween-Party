@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 import { NavContext } from "../../contexts/NavContext";
 
 export default function Nav() {
-  const { navOpen, changeNav } = useContext(NavContext);
+  const { navOpen, changeNav, backNav } = useContext(NavContext);
   const anchor =
     "md:flex md:flex-row md:font-primary md:text-xl md:text-primary md:border-solid md:border-2 md:border-primary md:rounded-lg md:px-6 md:py-1 md:hover:bg-background md:delay-100 md:duration-200 md:cursor-pointer";
 
@@ -48,6 +48,7 @@ export default function Nav() {
         >
           O Chamado
         </Link>
+
 
         <Link
           className={anchor}
@@ -115,7 +116,8 @@ export default function Nav() {
         </Link>
       </div>
     </nav>
-    <div className="fixed bottom-6 left-[88%] cursor-pointer z-10 text-primary text-[2rem] md:left-[95%] md:text-[2.2rem]" >
+    
+    <div className={`fixed bottom-6 transition-all duration-1000  ${backNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"} left-[88%] cursor-pointer z-10 text-primary text-[2rem]  md:left-[95%] md:text-[2.2rem] md:hover:scale-110`} >
     <Link
       
           

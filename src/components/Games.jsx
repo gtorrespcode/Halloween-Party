@@ -30,7 +30,7 @@ export default function Games() {
               return <h1 key={index} 
                       id={index}
                       onClick={() => changeGame(index)}
-                      className={  activeIndex === index ? "text-game w-[7.125rem] md:w-[12rem] cursor-pointer" : "cursor-pointer w-[7.125rem] md:w-[12rem] " }>{element}</h1>
+                      className={  activeIndex === index ? "text-game w-[7.125rem] md:w-[12rem] cursor-pointer" : "cursor-pointer w-[7.125rem] md:w-[12rem] hover:text-game/50 " }>{element}</h1>
             })}
           
         </div>

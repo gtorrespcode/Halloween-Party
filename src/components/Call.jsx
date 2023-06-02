@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+
 import { useContext } from "react";
 import { NavContext } from "../contexts/NavContext";
 import Line from "./global/Line";
@@ -8,6 +9,7 @@ export default function Call() {
   const { changeNav } = useContext(NavContext);
   return (
     <section
+    
       id="call"
       className="text-mobileP w-full font-secundary text-primary text-center flex flex-col justify-center items-center px-8 mb-12  gap-y-12
         md:text-desktop md:h-screen md:pb-0"
