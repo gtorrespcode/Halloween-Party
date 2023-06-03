@@ -1,21 +1,30 @@
 /* eslint-disable react/prop-types */
 
-
 import { useContext } from "react";
 import { NavContext } from "../contexts/NavContext";
 import Line from "./global/Line";
+import { ModalContext } from "../contexts/ModalContext";
+import Movie from "./global/Movie";
 
 export default function Call() {
-  const { changeNav, openModal } = useContext(NavContext);
+  const { changeNav } = useContext(NavContext);
+  const { openModal, setIndex } = useContext(ModalContext);
   return (
     <section
-    
       id="call"
       className="text-mobileP w-full font-secundary text-primary text-center flex flex-col justify-center items-center px-8 mb-12  gap-y-12
         md:text-desktop md:h-screen md:pb-0"
     >
       <p className="md:w-[64%]">
-      Venham todos, mortais corajosos, <span className="text-info" onClick={openModal}>O Chamado</span> para a noite mais aterrorizante do ano! Em meio à escuridão sombria, nas profundezas, nasce um convite irrecusável para a nossa festa. Adentrem e se preparem para experimentar o medo em sua forma mais pura. Nesta celebração misteriosa, as almas assombradas se reúnem para comemorar o <span className="text-info">Halloween</span> com uma intensidade que ecoará pelos séculos. No cenário sinistro e enfeitiçado, onde as sombras dançam e as criaturas sombrias sussurram, vocês testemunharão o terror em sua magnitude suprema.
+        Venham todos, mortais corajosos, <Movie index={0} movie="O Chamado" />{" "}
+        para a noite mais aterrorizante do ano! Em meio à escuridão sombria, nas
+        profundezas, nasce um convite irrecusável para a nossa festa. Adentrem e
+        se preparem para experimentar o medo em sua forma mais pura. Nesta
+        celebração misteriosa, as almas assombradas se reúnem para comemorar o{" "}
+        <Movie index={1} movie="Halloween" /> com uma intensidade que ecoará
+        pelos séculos. No cenário sinistro e enfeitiçado, onde as sombras dançam
+        e as criaturas sombrias sussurram, vocês testemunharão o terror em sua
+        magnitude suprema.
       </p>
 
       <img
@@ -35,7 +44,7 @@ export default function Call() {
         </span>{" "}
         ou seguir deslizando para baixo.
       </p>
-      <Line/>
+      <Line />
     </section>
   );
 }

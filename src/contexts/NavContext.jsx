@@ -6,33 +6,24 @@ export const NavContext = createContext();
 export const NavProvider = ({ children }) => {
   const [navOpen, setNavOpen] = useState(false);
   const [backNav, setBackNav] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const openModal = ({target}) => {
-      setModalOpen(!modalOpen);
-      console.log(target.innerText);
-  }
-    
 
   useEffect(() => {
     function handleScroll() {
       const scrollPosition = window.scrollY;
 
       if (scrollPosition >= 300) {
-        setBackNav(true)
+        setBackNav(true);
       } else {
-        setBackNav(false)
+        setBackNav(false);
       }
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  
 
   const changeNav = () => {
     if (window.innerWidth < 903) {
@@ -40,10 +31,8 @@ export const NavProvider = ({ children }) => {
     }
   };
 
-  
-
   return (
-    <NavContext.Provider value={{ navOpen, changeNav, backNav, openModal }}>
+    <NavContext.Provider value={{ navOpen, changeNav, backNav }}>
       {children}
     </NavContext.Provider>
   );

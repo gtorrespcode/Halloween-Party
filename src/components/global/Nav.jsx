@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FiArrowUpCircle} from "react-icons/fi"
+import { FiArrowUpCircle } from "react-icons/fi";
 // eslint-disable-next-line no-unused-vars
 import { Link } from "react-scroll";
 
@@ -12,115 +12,116 @@ export default function Nav() {
 
   return (
     <div>
-    <nav
-      className={
-        navOpen
-          ? "bg-background/80 fixed backdrop-blur-[5px] w-full h-full flex flex-col justify-center items-center font-primary text-xl text-primary decoration-1 underline gap-y-4 z-20"
-          : "bg-background/30 fixed top-0 left-0 backdrop-blur-[5px] w-full h-[53px] flex justify-center border-b-[1px] border-black pt-2 px-3 md:h-auto md:py-3 z-20"
-      }
-    >
-      <div
-        className={
-          "w-[35px] h-[35px] absolute top-2 " +
-          (navOpen
-            ? "bg-[url(/Images/Nav_Ghost_Open.png)] self-center delay-100 ease-in-out duration-500 animate-pulse"
-            : "bg-[url(/Images/Nav_Ghost.png)]") +
-          " bg-no-repeat bg-cover bg-center cursor-pointer md:hidden delay-100 ease-in-out duration-500"
-        }
-        onClick={changeNav}
-      ></div>
-      <div
+      <nav
         className={
           navOpen
-            ? "flex flex-col justify-center items-center text-xl decoration-1 underline gap-y-4"
-            : "hidden md:flex md:flex-row md:gap-x-8"
+            ? "bg-background/80 fixed backdrop-blur-[5px] w-full h-full flex flex-col justify-center items-center font-primary text-xl text-primary decoration-1 underline gap-y-4 z-20"
+            : "bg-background/30 fixed top-0 left-0 backdrop-blur-[5px] w-full h-[53px] flex justify-center border-b-[1px] border-black pt-2 px-3 md:h-auto md:py-3 z-20"
         }
       >
-        <Link
-          className={anchor}
+        <div
+          className={
+            "w-[35px] h-[35px] absolute top-2 " +
+            (navOpen
+              ? "bg-[url(/Images/Nav_Ghost_Open.png)] self-center delay-100 ease-in-out duration-500 animate-pulse"
+              : "bg-[url(/Images/Nav_Ghost.png)]") +
+            " bg-no-repeat bg-cover bg-center cursor-pointer md:hidden delay-100 ease-in-out duration-500"
+          }
           onClick={changeNav}
-          activeClass="active"
-          to="call"
-          smooth={true}
-          offset={-90}
-          duration={700}
-          delay={200}
+        ></div>
+        <div
+          className={
+            navOpen
+              ? "flex flex-col justify-center items-center text-xl decoration-1 underline gap-y-4"
+              : "hidden md:flex md:flex-row md:gap-x-8"
+          }
         >
-          O Chamado
-        </Link>
+          <Link
+            className={anchor}
+            onClick={changeNav}
+            activeClass="active"
+            to="call"
+            smooth={true}
+            offset={-90}
+            duration={700}
+            delay={200}
+          >
+            O Chamado
+          </Link>
 
+          <Link
+            className={anchor}
+            onClick={changeNav}
+            activeClass="active"
+            to="gallery"
+            smooth={true}
+            offset={-90}
+            duration={700}
+            delay={200}
+          >
+            Atividade Paranormal
+          </Link>
 
-        <Link
-          className={anchor}
-          onClick={changeNav}
-          activeClass="active"
-          to="gallery"
-          smooth={true}
-          offset={-90}
-          duration={700}
-          delay={200}
-        >
-          Atividade Paranormal
-        </Link>
-        
-        <Link
-          className={anchor}
-          onClick={changeNav}
-          activeClass="active"
-          to="menu"
-          smooth={true}
-          offset={-90}
-          duration={700}
-          delay={200}
-        >
-          O Poço
-        </Link>
-        
-        <Link
-          className={anchor}
-          onClick={changeNav}
-          activeClass="active"
-          to="games"
-          smooth={true}
-          offset={-90}
-          duration={700}
-          delay={200}
-        >
-          Jogos Mortais
-        </Link>
-        
-        <Link
-          className={anchor}
-          onClick={changeNav}
-          activeClass="active"
-          to="invite"
-          smooth={true}
-          offset={-90}
-          duration={700}
-          delay={200}
-        >
-          Halloween
-        </Link>
+          <Link
+            className={anchor}
+            onClick={changeNav}
+            activeClass="active"
+            to="menu"
+            smooth={true}
+            offset={-90}
+            duration={700}
+            delay={200}
+          >
+            O Poço
+          </Link>
 
+          <Link
+            className={anchor}
+            onClick={changeNav}
+            activeClass="active"
+            to="games"
+            smooth={true}
+            offset={-90}
+            duration={700}
+            delay={200}
+          >
+            Jogos Mortais
+          </Link>
+
+          <Link
+            className={anchor}
+            onClick={changeNav}
+            activeClass="active"
+            to="invite"
+            smooth={true}
+            offset={-90}
+            duration={700}
+            delay={200}
+          >
+            Halloween
+          </Link>
+
+          <Link
+            className={anchor}
+            onClick={changeNav}
+            activeClass="active"
+            to="developers"
+            smooth={true}
+            offset={-90}
+            duration={700}
+            delay={200}
+          >
+            Nós
+          </Link>
+        </div>
+      </nav>
+
+      <div
+        className={`fixed bottom-6 transition-all duration-1000  ${
+          backNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+        } left-[88%] cursor-pointer z-10 text-primary text-[2rem]  md:left-[95%] md:text-[2.2rem] md:hover:scale-110`}
+      >
         <Link
-          className={anchor}
-          onClick={changeNav}
-          activeClass="active"
-          to="developers"
-          smooth={true}
-          offset={-90}
-          duration={700}
-          delay={200}
-        >
-          Nós
-        </Link>
-      </div>
-    </nav>
-    
-    <div className={`fixed bottom-6 transition-all duration-1000  ${backNav ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"} left-[88%] cursor-pointer z-10 text-primary text-[2rem]  md:left-[95%] md:text-[2.2rem] md:hover:scale-110`} >
-    <Link
-      
-          
           activeClass="active"
           to="home"
           smooth={true}
@@ -128,10 +129,9 @@ export default function Nav() {
           duration={700}
           delay={200}
         >
-          <FiArrowUpCircle/>
+          <FiArrowUpCircle />
         </Link>
-        
-        </div>
+      </div>
     </div>
   );
 }

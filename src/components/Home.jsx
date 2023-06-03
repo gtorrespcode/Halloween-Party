@@ -1,7 +1,10 @@
 export default function Home() {
   return (
     <>
-      <section id="home" className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center px-8">
+      <section
+        id="home"
+        className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center px-8"
+      >
         <img
           className="hidden md:block md:w-[25%] md:max-w-[380px] md:h-[25%] md:origin-center md:rotate-[-17deg]"
           src="/Images/Pumpkin_logo.png"
@@ -26,23 +29,6 @@ export default function Home() {
           alt="pumpking-logo"
         />
       </section>
-      {/* <section className="bg-home bg-no-repeat bg-cover bg-center min-h-screen flex items-center justify-center z-0">
-        <img
-          className="w-[380px] h-[380px] origin-center -rotate-[17deg]"
-          src="/Images/Pumpkin_logo.png"
-          alt="pumpking-logo"
-        />
-        <div className="bg-black/[.5] rounded-[20px] backdrop-blur-[2px] w-[482px] h-[270px] flex items-center justify-center">
-          <h1 className="text-primary font-primary text-8xl text-center">
-            HALLOWEEN PARTY
-          </h1>
-        </div>
-        <img
-          className="w-[380px] h-[380px] origin-center rotate-[17deg] -scale-x-[1]"
-          src="/Images/Pumpkin_logo.png"
-          alt="pumpking-logo"
-        />
-      </section> */}
     </>
   );
 }

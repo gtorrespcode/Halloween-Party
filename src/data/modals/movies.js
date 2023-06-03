@@ -31,7 +31,7 @@ export const movies = [
 
     {
         title: "Jogos Mortais",
-        description: "ogos Mortais é uma franquia de filmes de terror lançada em 2004, criada por James Wan e Leigh Whannell. O primeiro filme da série segue a história de dois homens, Adam e Dr. Lawrence Gordon, que acordam em um banheiro abandonado, presos em uma situação terrível. Eles descobrem que são vítimas de um assassino conhecido como Jigsaw, que coloca suas vítimas em jogos mortais, onde devem enfrentar provas e dilemas cruéis para sobreviver. Conforme a trama se desenrola, os detalhes sombrios do passado de Jigsaw são revelados, enquanto as vítimas lutam para escapar de suas armadilhas mortais."
+        description: "Jogos Mortais é uma franquia de filmes de terror lançada em 2004, criada por James Wan e Leigh Whannell. O primeiro filme da série segue a história de dois homens, Adam e Dr. Lawrence Gordon, que acordam em um banheiro abandonado, presos em uma situação terrível. Eles descobrem que são vítimas de um assassino conhecido como Jigsaw, que coloca suas vítimas em jogos mortais, onde devem enfrentar provas e dilemas cruéis para sobreviver. Conforme a trama se desenrola, os detalhes sombrios do passado de Jigsaw são revelados, enquanto as vítimas lutam para escapar de suas armadilhas mortais."
     } ,
 
     {
@@ -49,6 +49,4 @@ export const movies = [
         description: 'Nós é um filme de terror e suspense lançado em 2019, escrito e dirigido por Jordan Peele. A história acompanha a vida da família Wilson, liderada por Adelaide, interpretada por Lupita Nyong, que decide passar férias em uma casa na praia com seu marido e seus dois filhos. No entanto, a viagem se transforma em um pesadelo quando uma família misteriosa e sinistra, idêntica à família Wilson, aparece em frente à casa. À medida que a noite avança, segredos sombrios são revelados, e a família Wilson é forçada a enfrentar suas versões aterrorizantes e violentas, conhecidas como os "Tethered".'
     } 
     
-]
-
-console.log(movies[3].description);
+];
