@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { movies } from "../../data/modals/movies";
 import { ModalContext } from "../../contexts/ModalContext";
 
 export default function Movie(props) {
-  const { openModal, setContent } = useContext(ModalContext);
+  const { setMovieModal, setContent } = useContext(ModalContext);
 
   return (
     <span
@@ -13,7 +14,7 @@ export default function Movie(props) {
           title: movies[props.index].title,
           description: movies[props.index].description,
         }),
-          openModal();
+          setMovieModal(true);
       }}
     >
       {props.movie}

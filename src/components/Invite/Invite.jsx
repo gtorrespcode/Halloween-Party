@@ -1,7 +1,10 @@
-import Movie from "./global/Movie";
-import Line from "./global/Line";
+import Movie from "../global/Movie";
+import Line from "../../components/global/Line";
+import { ModalContext } from "../../contexts/ModalContext";
+import { useContext } from "react";
 
 export default function Invite() {
+  const {setInviteModal} = useContext(ModalContext)
   return (
     <section
       id="invite"
@@ -15,7 +18,8 @@ export default function Invite() {
         className="w-[12.313rem] h-[12.313rem] rounded-[25%] drop-shadow-[0px_15px_5px_rgba(0,0,0,0.25)] md:w-[22rem] md:h-[22rem]"
         src="/Images/Terrifying_House.jpg"
       />
-      <button className="bg-primary rounded-[10px] text-background mb-20 py-1 px-8 md:w-[15.313rem] md:py-4 md:hover:scale-[1.05] duration-700">
+      <button onClick={() => setInviteModal(true) }
+      className="bg-primary rounded-[10px] text-background mb-20 py-1 px-8 md:w-[15.313rem] md:py-4 md:hover:scale-[1.05] duration-700">
         Adquirir ingresso
       </button>
       <Line />

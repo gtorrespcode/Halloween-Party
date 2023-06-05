@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Movie from "./global/Movie";
-import Line from "./global/Line";
-import { gamesImg, gameNames } from "../data/games";
+import Movie from "../global/Movie";
+import Line from "../../components/global/Line";
+import { gamesImg, gameNames } from "../../data/games";
+import  Game  from "./Game";
 
 export default function Games() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -20,12 +21,14 @@ export default function Games() {
         <Movie index={6} movie="Jogos Mortais" /> ?
       </p>
       <div className="flex flex-col items-center justify-center gap-x-8 sm:flex-row sm: gap-y-6">
-        <div
-          className={
-            gamesImg[activeIndex] +
-            " bg-no-repeat bg-cover bg-center w-[250px] h-[350px] rounded-[0.5rem] drop-shadow-[8px_8px_3px_rgba(0,0,0,0.25)]  transition-all duration-700 hover:animate-shake cursor-pointer  md:w-[350px] md:h-[450px]"
-          }
-        ></div>
+        <Game index={activeIndex}>
+          <div
+            className={
+              gamesImg[activeIndex] +
+              " bg-no-repeat bg-cover bg-center w-[250px] h-[350px] rounded-[0.5rem] drop-shadow-[8px_8px_3px_rgba(0,0,0,0.25)]  transition-all duration-700 hover:animate-shake cursor-pointer  md:w-[350px] md:h-[450px]"
+            }
+          ></div>
+        </Game>
         <div className="w-[290px] font-secundary text-[1.45rem] md:text-[2rem] text-center text-game/25 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 sm:flex-col ">
           {gameNames.map((element, index) => {
             return (

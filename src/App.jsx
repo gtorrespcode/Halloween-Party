@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import Nav from "./components/global/Nav";
-import Call from "./components/Call";
+import Call from "./components/Call/Call";
 import Gallery from "./components/Gallery/Gallery";
 import Menu from "./components/Menu/Menu";
-import Games from "./components/Games";
-import Invite from "./components/Invite";
+import Games from   "./components/Games/Games";
+import Invite from "./components/Invite/Invite";
 import Developers from "./components/Developers/Developers";
 import Footer from "./components/global/Footer";
 // import Modal from "./components/global/MovieModal";

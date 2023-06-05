@@ -1,14 +1,13 @@
 /* eslint-disable react/prop-types */
 
 import { useContext } from "react";
-import { NavContext } from "../contexts/NavContext";
-import Line from "./global/Line";
-import { ModalContext } from "../contexts/ModalContext";
-import Movie from "./global/Movie";
+import { NavContext } from "../../contexts/NavContext";
+import Line from "../global/Line";
+import Movie from "../global/Movie";
 
 export default function Call() {
   const { changeNav } = useContext(NavContext);
-  const { openModal, setIndex } = useContext(ModalContext);
+  
   return (
     <section
       id="call"

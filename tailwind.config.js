@@ -53,11 +53,25 @@ export default {
           "0% , 100%" : {transform: "rotate(0deg)" },
           "25%, 75%" : {transform: "rotate(-3deg)"},
           "50%" : {transform: "rotate(3deg)"}  
+        },
+        openModal: {
+          "0%": {transform: "scale(0.3)"},
+          "100%": {transform: "scale(1)"}
+        },
+
+        showCard: {
+          "0%": {transform: "translateY(200%)"},
+          "100%": {transform: "translateY(0)"}
         }
+
       },
 
       animation: {
-        shake: "shake 0.8s ease-in-out infinite"
+        shake: "shake 0.8s ease-in-out infinite",
+        openModal: "openModal 1s ease",
+        showCard: "showCard 1s ease"
+        
+
       }
     },
   },

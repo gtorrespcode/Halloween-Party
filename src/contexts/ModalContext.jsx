@@ -4,24 +4,33 @@ import { useState, createContext } from "react";
 export const ModalContext = createContext();
 
 export const ModalProvider = ({ children }) => {
-  const [modal, setModal] = useState(false);
+  const [movieModal, setMovieModal] = useState(false);
+  const [gameModal, setGameModal] = useState(false);
+  const [inviteModal, setInviteModal] = useState(false);
+  const [developersModal, setDevelopersModal] = useState(false);
   const [content, setContent] = useState({
     title: "",
     description: "",
   });
 
-  const openModal = () => {
-    setModal(true);
-  };
-  const closeModal = () => {
-    setModal(false);
-  };
-
   return (
     <ModalContext.Provider
-      value={{ modal, openModal, closeModal, content, setContent }}
+      value={{
+        movieModal,
+        setMovieModal,
+        gameModal,
+        setGameModal,
+        inviteModal,
+        setInviteModal,
+        developersModal,
+        setDevelopersModal,
+        content,
+        setContent,
+      }}
     >
       {children}
     </ModalContext.Provider>
   );
 };
+
+
