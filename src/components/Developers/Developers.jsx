@@ -12,14 +12,14 @@ export default function Developers() {
       <div className="flex flex-col justify-center items-center gap-y-6 my-12 md:my-28 md:flex-row md:gap-x-20">
         <DevelopersCard
           name="Gabriel Torres"
-          image= "/Images/TorresPhoto.png"
+          image= "/Images/TorresProfileH.png"
           description="Olá, sou Gabriel Torres"
           linkedin="https://www.linkedin.com/in/gabriel-torres-2112b6212/"
           github="https://github.com/gtorrespcode"
         />
         <DevelopersCard
           name="João Vitor Cardoso"
-          image="/Images/BarbosaPhoto.png"
+          image="/Images/BarbosaProfileH.png"
           description="Olá, sou o Barbosa"
           linkedin="https://www.linkedin.com/in/jo%C3%A3o-vitor-cardoso-barbosa-407173225/"
           github="https://github.com/devjohn42"
