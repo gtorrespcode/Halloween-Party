@@ -11,8 +11,7 @@ export default function Menu() {
                          md:text-desktop"
     >
       <p className="lg:w-[31.25rem] md:pt-12">
-        Para matar sua fome nós temos <Movie index={4} movie="O Poço" />, ou
-        melhor, alguns aperitivos para ninguém entrar em{" "}
+        Para matar sua fome nós temos <Movie index={4} movie="O Poço" />, ou melhor, alguns aperitivos para ninguém entrar em{" "}
         <Movie index={5} movie="Pânico" />.
       </p>
       <div

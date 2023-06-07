@@ -13,7 +13,7 @@ export default function InviteModal() {
               Muito Obrigado!
             </div>
             <div className="text-justify p-6 text-mobileP md:text-desktop">
-            Opa, se você chegou até aqui agradeço de coração. Isso se trata de um projeto em desenvolvimento. A festa realmente existe mas ainda não conseguimos expandir a quantidade de pessoas por questões internas, mas definitivamente um dia tornaremos esse evento acessível a todos. 
+            Opa, se você chegou até aqui agradeçemos de coração. Isso se trata de um projeto em desenvolvimento. A festa realmente existe mas ainda não conseguimos expandir a quantidade de pessoas por questões internas, mas definitivamente um dia tornaremos esse evento acessível a todos. 
             </div>
             <div className="absolute top-[2%] right-[2%] text-[1.3rem] md:text-[2rem] md:top-[1%] md:right-[2%] text-primary">
               <AiOutlineCloseCircle

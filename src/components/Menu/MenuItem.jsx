@@ -1,16 +1,15 @@
 /* eslint-disable react/prop-types */
-import { animations } from "../../data/animations"
+import { animations } from "../../data/animations";
 import { motion } from "framer-motion";
 
 export default function MenuItem(props) {
-  
-
   return (
     <motion.div
-    {...props.type === "Salgados" ? {...animations.leftToRight} : "" }
-    {...props.type === "Bebidas e Drinks" ? {...animations.rightToLeft} : "" }
-    {...props.type === "Doces" ? {...animations.downToUp} : "" }
-    
+      {...(props.type === "Salgados" ? { ...animations.leftToRight } : "")}
+      {...(props.type === "Bebidas e Drinks"
+        ? { ...animations.rightToLeft }
+        : "")}
+      {...(props.type === "Doces" ? { ...animations.downToUp } : "")}
       className={
         "w-[18.75rem] h-[15rem] " +
         props.bg +

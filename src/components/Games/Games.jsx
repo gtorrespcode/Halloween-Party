@@ -2,8 +2,8 @@ import { useState } from "react";
 import Movie from "../global/Movie";
 import Line from "../../components/global/Line";
 import { gamesImg, gameNames } from "../../data/games";
-import  Game  from "./Game";
-import { motion } from "framer-motion"
+import Game from "./Game";
+import { motion } from "framer-motion";
 import { animations } from "../../data/animations";
 
 export default function Games() {
@@ -25,7 +25,7 @@ export default function Games() {
       <div className="flex flex-col items-center justify-center gap-x-8 sm:flex-row sm: gap-y-6">
         <Game index={activeIndex}>
           <motion.div
-          {...animations.rotateToLeft}
+            {...animations.rotateToLeft}
             className={
               gamesImg[activeIndex] +
               " bg-no-repeat bg-cover bg-center w-[250px] h-[350px] rounded-[0.5rem] drop-shadow-[8px_8px_3px_rgba(0,0,0,0.25)]  transition-all duration-700 hover:animate-shake cursor-pointer  md:w-[350px] md:h-[450px]"

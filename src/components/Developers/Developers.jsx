@@ -12,7 +12,7 @@ export default function Developers() {
       <div className="flex flex-col justify-center items-center gap-y-6 my-12 md:my-28 md:flex-row md:gap-x-20">
         <DevelopersCard
           name="Gabriel Torres"
-          image= "/Images/TorresProfileH.png"
+          image="/Images/TorresProfileH.png"
           description='Desenvolvedor Front-end. "Programação é a arte de transformar café em código."'
           linkedin="https://www.linkedin.com/in/gabriel-torres-2112b6212/"
           github="https://github.com/gtorrespcode"

@@ -4,7 +4,7 @@ import { gameRules } from "../../data/modals/gameRules";
 
 import { ModalContext } from "../../contexts/ModalContext";
 
-export default function Game({children, index}) {
+export default function Game({ children, index }) {
   const { setGameModal, setContent } = useContext(ModalContext);
 
   return (

@@ -13,7 +13,7 @@ export default function GameModal() {
               {content.title}
             </div>
             <div className="text-justify p-6 text-mobileP md:text-desktop">
-              {content.description}   
+              {content.description}
             </div>
             <div className="absolute top-[2%] right-[2%] text-[1.3rem] md:text-[2rem] md:top-[1%] md:right-[2%] text-game">
               <AiOutlineCloseCircle

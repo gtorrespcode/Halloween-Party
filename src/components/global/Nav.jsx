@@ -16,12 +16,12 @@ export default function Nav() {
         className={
           navOpen
             ? "bg-background/80 fixed backdrop-blur-[5px] w-full h-full flex flex-col justify-center items-center font-primary text-xl text-primary decoration-1 underline gap-y-4 z-20"
-            : "bg-background/30 fixed top-0 left-0 backdrop-blur-[5px] w-full h-[53px] flex justify-center border-b-[1px] border-black pt-2 px-3 md:h-auto md:py-3 z-20"
+            : "bg-background/30 fixed top-0 left-0 backdrop-blur-[5px] w-full h-[3.313rem] flex justify-center border-b-[1px] border-black pt-2 px-3 md:h-auto md:py-3 z-20"
         }
       >
         <div
           className={
-            "w-[35px] h-[35px] absolute top-2 " +
+            "w-[2.188rem] h-[2.188rem] absolute top-2 " +
             (navOpen
               ? "bg-[url(/Images/Nav_Ghost_Open.png)] self-center delay-100 ease-in-out duration-500 animate-pulse"
               : "bg-[url(/Images/Nav_Ghost.png)]") +
@@ -42,7 +42,7 @@ export default function Nav() {
             to="call"
             smooth={true}
             offset={-90}
-            duration={700}
+            duration={600}
             delay={200}
           >
             O Chamado
@@ -52,9 +52,9 @@ export default function Nav() {
             className={anchor}
             onClick={changeNav}
             to="gallery"
-            smooth={true}
+            smooth={false}
             offset={-90}
-            duration={700}
+            duration={600}
             delay={200}
           >
             Atividade Paranormal
@@ -66,7 +66,7 @@ export default function Nav() {
             to="menu"
             smooth={true}
             offset={-90}
-            duration={700}
+            duration={600}
             delay={200}
           >
             O Poço
@@ -78,7 +78,7 @@ export default function Nav() {
             to="games"
             smooth={true}
             offset={-90}
-            duration={700}
+            duration={600}
             delay={200}
           >
             Jogos Mortais
@@ -90,7 +90,7 @@ export default function Nav() {
             to="invite"
             smooth={true}
             offset={-90}
-            duration={700}
+            duration={600}
             delay={200}
           >
             Halloween
@@ -100,9 +100,9 @@ export default function Nav() {
             className={anchor}
             onClick={changeNav}
             to="developers"
-            smooth={true}
+            smooth={false}
             offset={-90}
-            duration={700}
+            duration={600}
             delay={200}
           >
             Nós

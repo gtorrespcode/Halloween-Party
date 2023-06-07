@@ -21,7 +21,7 @@ export const movies = [
 
     {
         title: "O Poço",
-        description: "O Poço é um filme de suspense e ficção científica lançado em 2019, dirigido por Galder Gaztelu-Urrutia. A trama se passa em uma prisão vertical, conhecida como O Poço, onde os detentos são distribuídos em diferentes níveis. A cada dia, uma plataforma desce pelos níveis, carregando comida para os prisioneiros. No entanto, a quantidade de comida é limitada e, à medida que a plataforma desce, os prisioneiros dos níveis superiores consomem tudo, deixando pouco ou nenhum alimento para os níveis inferiores. A história segue o protagonista Goreng, que voluntariamente se coloca na prisão e luta para sobreviver em um ambiente cada vez mais caótico e brutal."
+        description: "O Poço é um filme de terror e ficção científica lançado em 2019, dirigido por Galder Gaztelu-Urrutia. A trama se passa em uma prisão vertical, conhecida como O Poço, onde os detentos são distribuídos em diferentes níveis. A cada dia, uma plataforma desce pelos níveis, carregando comida para os prisioneiros. No entanto, a quantidade de comida é limitada e, à medida que a plataforma desce, os prisioneiros dos níveis superiores consomem tudo, deixando pouco ou nenhum alimento para os níveis inferiores. A história segue o protagonista Goreng, que voluntariamente se coloca na prisão e luta para sobreviver em um ambiente cada vez mais caótico e brutal."
     } ,
 
     {

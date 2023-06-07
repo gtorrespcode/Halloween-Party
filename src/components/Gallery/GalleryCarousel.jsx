@@ -33,9 +33,6 @@ export default function MyCarousel() {
         showStatus={false}
         showArrows={true}
         showThumbs={false}
-        // interval={5000}
-        // autoPlay={true}
-        // infiniteLoop={true}
         transitionTime={600}
         className="w-[16.25rem] h-[16.25rem] border-2 border-primary  md:hidden"
       >
@@ -50,5 +47,3 @@ export default function MyCarousel() {
     </div>
   );
 }
-
-// {props.galleryItem.map(item, index) => <li key={index}>{item}</li>}

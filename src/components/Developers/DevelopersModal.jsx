@@ -3,7 +3,8 @@ import { ModalContext } from "../../contexts/ModalContext";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 export default function DevelopersModal() {
-  const { developersModal, content, setDevelopersModal } = useContext(ModalContext);
+  const { developersModal, content, setDevelopersModal } =
+    useContext(ModalContext);
   return (
     <>
       {developersModal && (
@@ -13,10 +14,9 @@ export default function DevelopersModal() {
               {content.title}
             </div>
             <div className="flex justify-center bg-background">
-            <img className=""
-            src={content.image}/>
+              <img className="" src={content.image} />
             </div>
-            
+
             <div className="text-center p-6 text-mobileP md:text-desktop">
               {content.description}
             </div>
