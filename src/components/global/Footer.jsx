@@ -12,7 +12,7 @@ export default function Footer() {
         <p className="font-bold">Imagens</p>
         <p>Geradas por uma IA</p>
         <p>
-          Background:<a href=""> Imagem de macroveclor</a>
+          Background:<a target="blank" href="https://br.freepik.com/autor/macrovector"> Imagem de macroveclor</a>
         </p>
         <p>
           <a href="https://icons8.com/icon/10137/ghost">Ghost</a> icon by{" "}

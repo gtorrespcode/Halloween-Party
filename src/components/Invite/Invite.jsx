@@ -15,7 +15,7 @@ export default function Invite() {
         ingressos podem estar acabando, <Movie index={8} movie="Corra" />
       </p>
       <img
-        className="w-[12.313rem] h-[12.313rem] rounded-[25%] drop-shadow-[0px_15px_5px_rgba(0,0,0,0.25)] md:w-[22rem] md:h-[22rem]"
+        className="w-[12.313rem] h-[12.313rem] rounded-[25%] drop-shadow-[0px_15px_5px_rgba(0,0,0,0.25)] md:w-[22rem] md:h-[22rem]   md:hover:duration-1000 hover:duration-1000 transition-all"
         src="/Images/Terrifying_House.jpg"
       />
       <button onClick={() => setInviteModal(true) }

@@ -39,7 +39,6 @@ export default function Nav() {
           <Link
             className={anchor}
             onClick={changeNav}
-            activeClass="active"
             to="call"
             smooth={true}
             offset={-90}
@@ -52,7 +51,6 @@ export default function Nav() {
           <Link
             className={anchor}
             onClick={changeNav}
-            activeClass="active"
             to="gallery"
             smooth={true}
             offset={-90}
@@ -65,7 +63,6 @@ export default function Nav() {
           <Link
             className={anchor}
             onClick={changeNav}
-            activeClass="active"
             to="menu"
             smooth={true}
             offset={-90}
@@ -78,7 +75,6 @@ export default function Nav() {
           <Link
             className={anchor}
             onClick={changeNav}
-            activeClass="active"
             to="games"
             smooth={true}
             offset={-90}
@@ -91,7 +87,6 @@ export default function Nav() {
           <Link
             className={anchor}
             onClick={changeNav}
-            activeClass="active"
             to="invite"
             smooth={true}
             offset={-90}
@@ -104,7 +99,6 @@ export default function Nav() {
           <Link
             className={anchor}
             onClick={changeNav}
-            activeClass="active"
             to="developers"
             smooth={true}
             offset={-90}

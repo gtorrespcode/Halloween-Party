@@ -1,7 +1,16 @@
 /* eslint-disable react/prop-types */
+import { animations } from "../../data/animations"
+import { motion } from "framer-motion";
+
 export default function MenuItem(props) {
+  
+
   return (
-    <div
+    <motion.div
+    {...props.type === "Salgados" ? {...animations.leftToRight} : "" }
+    {...props.type === "Bebidas e Drinks" ? {...animations.rightToLeft} : "" }
+    {...props.type === "Doces" ? {...animations.downToUp} : "" }
+    
       className={
         "w-[18.75rem] h-[15rem] " +
         props.bg +
@@ -20,6 +29,6 @@ export default function MenuItem(props) {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

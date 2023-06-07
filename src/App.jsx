@@ -16,7 +16,7 @@ import { ModalProvider } from "./contexts/ModalContext";
 
 function App() {
   return (
-    <div className="bg-background">
+    <div className="bg-background overflow-hidden">
       <NavProvider>
         <ModalProvider>
           <Nav />

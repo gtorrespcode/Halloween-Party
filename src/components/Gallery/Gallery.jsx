@@ -2,6 +2,8 @@ import MyCarousel from "./GalleryCarousel";
 import GalleryGrid from "./GalleryGrid";
 import Movie from "../global/Movie";
 import Line from "../global/Line";
+import { motion} from "framer-motion";
+import { animations } from "../../data/animations";
 
 export default function Gallery() {
   return (
@@ -13,9 +15,10 @@ export default function Gallery() {
         Esse é o terceiro ano da nossa festa. Como você pode imaginar, já rolou
         muita <Movie index={2} movie="Atividade Paranormal" /> por aqui.{" "}
       </p>
-
+      <motion.div { ...animations.growUp}>
       <GalleryGrid />
       <MyCarousel />
+      </motion.div>
 
       <p className="mb-12">
         Agora é sua vez de ser <Movie index={3} movie="O Iluminado" />.
