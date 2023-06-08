@@ -17,7 +17,7 @@ export default function DevelopersModal() {
               <img className="" src={content.image} />
             </div>
 
-            <div className="text-center p-6 text-mobileP md:text-desktop">
+            <div className="text-center p-3 text-mobileP md:text-desktop">
               {content.description}
             </div>
             <div className="absolute top-[2%] right-[2%] text-[1.3rem] md:text-[2rem] md:top-[1%] md:right-[2%] text-background">
