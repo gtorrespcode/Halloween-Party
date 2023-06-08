@@ -8,7 +8,7 @@ import { NavContext } from "../../contexts/NavContext";
 export default function Nav() {
   const { navOpen, changeNav, backNav } = useContext(NavContext);
   const anchor =
-    "md:flex md:flex-row md:font-primary md:text-xl md:text-primary md:border-solid md:border-2 md:border-primary md:rounded-lg md:px-6 md:py-1 md:hover:bg-background md:delay-100 md:duration-200 md:cursor-pointer";
+    "md:flex md:flex-row md:font-primary md:text-xl md:text-primary md:border-solid md:border-2 md:border-primary md:rounded-lg md:px-3 md:py-1 md:hover:bg-background md:delay-100 md:duration-200 md:cursor-pointer";
 
   return (
     <div>
